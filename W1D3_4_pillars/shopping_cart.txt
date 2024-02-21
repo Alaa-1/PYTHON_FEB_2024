@@ -1,0 +1,22 @@
+class ShoppingCart:
+# Constructor
+def __init__(self, store):
+self.store = store
+self.items = []
+self.total = 0
+
+# Method
+def add_item(self, item, price):
+
+self.items.append(item)
+self.total += price
+
+return self
+
+my_cart = ShoppingCart("Monoprix")
+
+my_cart
+
+
+items["laptop", "Speakers", "earbuds"]
+total = 1380
