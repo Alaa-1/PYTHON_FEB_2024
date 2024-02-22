@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+</head>
+<body>
+    <h1>Welcome to the ZOO </h1>
+    <hr>
+    <ul>
+
+        {% for one_animal in animals: %}
+        {% if one_animal.number > 1 %}
+        <li>{{one_animal.name}} - {{one_animal.number}}</li>
+        {% endif %}
+        {% endfor %}
+        <h4>The zoo has {{animals|length}} types of animals</h4>
+    </ul>
+</body>
+</html>
